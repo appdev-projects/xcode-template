@@ -1,0 +1,24 @@
+{
+  "originHash" : "063f2f2fe0cf199caad23586cc1d3f7cdd0f07e253abacab140942500f3959cd",
+  "pins" : [
+    {
+      "identity" : "bridge-components",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/joemasilotti/bridge-components",
+      "state" : {
+        "revision" : "67d2d3c7dad38b4e47e0a6057a9ce890366d45a2",
+        "version" : "0.13.2"
+      }
+    },
+    {
+      "identity" : "hotwire-native-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hotwired/hotwire-native-ios",
+      "state" : {
+        "revision" : "595dba37c4918afd0e2d470109bc0c356d6e9afe",
+        "version" : "1.2.2"
+      }
+    }
+  ],
+  "version" : 3
+}
