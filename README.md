@@ -20,8 +20,13 @@ network, so `localhost` is your Mac.
 ## What's inside
 
 - `App/Delegates/SceneDelegate.swift`: the `baseURL` and the `Navigator` that loads it.
-- `App/Delegates/AppDelegate.swift`: registers the Bridge Components.
-- `App/Resources/Info.plist`: allows plain `http` to `localhost` (`NSAllowsLocalNetworking`).
+- `App/Delegates/AppDelegate.swift`: registers the Bridge Components and a few Hotwire settings
+  (our `WebViewController`, a minimal back button, debug logging).
+- `App/Controllers/WebViewController.swift`: the screen that shows each web page. It adds a Cancel
+  button to screens that open as modals.
+- `App/Resources/Info.plist`: allows plain `http` to `localhost` (`NSAllowsLocalNetworking`), and
+  the camera, microphone and photo library usage descriptions that iOS requires before a page's
+  file input can offer the camera (without them, the app is terminated).
 - Swift packages: `hotwire-native-ios` and `bridge-components`, each set to "Up to Next Minor
   Version", because minor releases can include breaking changes.
 

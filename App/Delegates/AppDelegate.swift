@@ -10,6 +10,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         Hotwire.registerBridgeComponents(Bridgework.coreComponents)
+
+        // Show each web page in our WebViewController, which adds a Cancel button to modal screens.
+        Hotwire.config.defaultViewController = { url in WebViewController(url: url) }
+
+        // The back button shows just a chevron, not the previous page's title.
+        Hotwire.config.backButtonDisplayMode = .minimal
+
+        // Log what Hotwire is doing to Xcode's console while developing.
+        #if DEBUG
+            Hotwire.config.debugLoggingEnabled = true
+        #endif
+
         return true
     }
 
