@@ -33,8 +33,10 @@ network, so `localhost` is your Mac.
 ## Before you ship
 
 Rename the app and give it your own bundle identifier: in Xcode, select the project, then the
-`XcodeTemplate` target, and in the General tab change Display Name and Bundle Identifier (e.g.
-`com.yourname.yourapp`). Then point `baseURL` at your production URL.
+`XcodeTemplate` target. Change Bundle Identifier on the Signing & Capabilities tab (e.g.
+`com.yourname.yourapp`), and Display Name on the General tab, under Identity. The identifier is
+permanent once it has been used with the App Store, so choose it with care. Then point `baseURL`
+at your production URL.
 
 ## Troubleshooting
 
